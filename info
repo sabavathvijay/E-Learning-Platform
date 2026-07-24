@@ -1,0 +1,12 @@
+1. Using JSON file to store the user registered info into the J SON server Deployed in Render
+2. The API : https://json-server-iw8b.onrender.com/Users
+
+3. The Details directly Posed into Json server 
+
+4. Only details Posted to server when you fill the Complete details 
+
+5. Rechecking the users , if they Already Registered or not
+
+6. tranversed to complete users registered and checking their Email to Verify weather they Register
+
+7. Used a flag to verify : weather the user Exists "has"   

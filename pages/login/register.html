@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+  <link rel="stylesheet" href="register.css">
+</head>
+<body>
+
+
+    <main>
+
+<fieldset class="center">
+
+    <legend>Register</legend>
+
+
+
+    <form  id="form" >
+
+        <div class="name lables">
+
+            <label for="userName">Full Name :</label>
+            <input type="text" required id="userName" placeholder="full name :">
+        </div>
+
+        <div class="email lables">
+
+
+            <label for="email">Email :</label>
+            
+            <input type="text" id="email"  required placeholder="email :">
+        </div>
+
+        <div class="password lables" >
+
+
+            <label for="mobile">Phone No :</label>
+            <input type="tel" id="mobile" required placeholder="Phone No :"  maxlength=10 >
+            
+        </div>
+        <div class="password lables" >
+
+
+            <label for="password">Password :</label>
+            <input type="password" required id="password" placeholder="password :">
+            
+        </div>
+  <button class="registerBtn" type="submit" id="submitBtn" >Register</button>
+ 
+    </form>
+
+</fieldset>
+       
+
+
+
+    </main>
+
+
+      <script src="../../js/Auth/register.js"></script>
+    
+</body>
+</html>
