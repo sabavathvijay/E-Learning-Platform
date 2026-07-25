@@ -1,19 +1,66 @@
 
-let email = document.querySelector("#email");
+const email = document.querySelector("#email");
 
 const password = document.querySelector("#password");
-const form = document.querySelector("form");
+const myform = document.querySelector("form");
 const loginBtn = document.querySelector(".loginBtn");
+const homeBtn = document.querySelector("#homeBtn");
+
+email.focus();
 
 
 
-form.addEventListener('submit', (e) => {
+window.onload= () =>{
 
-    e.preventDefault();
-})
+    myform.addEventListener('submit', (e) => {
+    
+        e.preventDefault();
+
+        //  login()
+    })
+}
+
+
+
+//============= Save data into LocalStorage ===================
+
+
+
+async function myStorage() {
+
+     let res = await fetch("https://json-server-iw8b.onrender.com/Users", { method: "GET" })
+
+    let data = await res.json();
+
+    // let allUser = JSON.parse(localStorage.getItem("users")) || [];
+
+
+
+
+    localStorage.setItem("users",JSON.stringify(data));
+
+
+    console.log("data")
+
+
+
+    
+}
+ myStorage()
+
+
+
+
+
+
 
 loginBtn.addEventListener('click', () => {
-    login(email.value, password.value)
+   
+
+    if(email.value && password.value){
+
+        login()
+    }
 
 })
 
@@ -27,20 +74,36 @@ console.log("email,password")
 
 
 
-async function login(email, password) {
+async function login() {
 
+    // Window.location.reload();
 
     let res = await fetch("https://json-server-iw8b.onrender.com/Users", { method: "GET" })
 
     let data = await res.json();
 
-    let has = false;
+
+
+
+
+//  let data = JSON.parse(localStorage.getItem("users"))
+
+
+
+
+    let matched = false;
 
     data.forEach(user => {
 
-        if (user.email === email && user.password === password) {
+console.log(matched)
 
-            has = true;
+        if (user.email === email.value && user.password === password.value) {
+
+            matched = true;
+
+            email.innerHTML=" "
+            password.innerHTML=" "
+
 
         }
 
@@ -48,28 +111,47 @@ async function login(email, password) {
     });
 
 
-    if(has){
+    if (matched) {
 
-          console.log("You are a User..! \n Welcome You Logined");
-          
-        //   window.location.href="/pages/home/home.html";
-          window.location.href="../home/home.html";
-          window.confirm("Welcom Your Login Successfully....!")
+        console.log("You are a User..! \n Welcome You Logined");
+
+        window.confirm("Welcom Your Login Successfully....!")
+        window.location.href = "../home/home.html";
+    }
+
+    else {
+        let want = window.confirm("Sorry Your Login is Failed....!\n Register first...!")
+        console.log("Sorry Your Login is Failed....!\n Register first...!");
+
+        if(want){
+
+            window.location.href="./register.html";
+        }
+        else{
+            window.location.href="./login.html";
         }
         
-        else{
-            window.confirm("Sorry Your Login is Failed....!\n Register first...!")
-            console.log("Sorry Your Login is Failed....!\n Register first...!");
+        
 
-             window.location.href="./register.html";
-            
 
 
     }
-  
+
 
 
 
 
 
 }
+
+homeBtn.addEventListener("click",() =>{
+     window.location.href="../../index.html";
+
+})
+
+
+
+
+
+
+

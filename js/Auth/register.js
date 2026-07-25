@@ -1,6 +1,5 @@
 
 
-let form = document.querySelector("form");
 
 let userName = document.querySelector("#userName");
 
@@ -8,7 +7,11 @@ let email = document.querySelector("#email");
 let mobile = document.querySelector("#mobile");
 let password = document.querySelector("#password");
 let sumbitBtn = document.querySelector(".registerBtn");
+let homeBtn = document.querySelector("#homeBtn");
 
+userName.focus();
+
+let form = document.querySelector("form");
 
 form.addEventListener('submit', (e) => {
 
@@ -63,7 +66,7 @@ sumbitBtn.addEventListener('click', async () => {
             window.location.href="./login.html";
         }
         else {
-            window.location.href="./pages/login/login.html";
+            window.location.href="../../index.html";
             window.confirm("User already Exist..!")
         }
 
@@ -73,6 +76,11 @@ sumbitBtn.addEventListener('click', async () => {
 
 
     }
+
+})
+
+homeBtn.addEventListener("click",() =>{
+     window.location.href="../../index.html";
 
 })
 

@@ -22,7 +22,7 @@ body {
 /* ============================= */
 header {
   grid-area: header;
-  background-color: rgba(107, 7, 7, 0.421);
+  background-color: rgba(160, 184, 23, 0.549);
   background: url("https://imgs.search.brave.com/YK_4Oei2NpDFqA9xCU4rHRL6z7HkxnJeHRUdLPiyhcY/rs:fit:0:180:1:0/g:ce/aHR0cHM6Ly93d3cu/c2h1dHRlcnN0b2Nr/LmNvbS9pbWFnZS1w/aG90by9lbGVhcm5p/bmctY29uY2VwdC1s/YXB0b3AtY29tcHV0/ZXItb24tMjYwbnct/MTgwNzc3NTU3Mi5q/cGc") no-repeat ;
   background-position: center;
   background-size: cover;
@@ -35,16 +35,36 @@ header {
 
 }
 
+
+/* .admin {
+    background-color: black;
+    width: 20px;
+    height: 40px;
+    align-self: center;
+}
+
+ .admin button,.admin button a{
+    width: 0px;
+    height: 30px;
+
+}
+/* svg{
+    width: 100%;
+    height: 100%;
+} */ */
+
 /* Nav */
 /* ================================= */
 
 
+
+
 nav {
   /* grid-area: nav; */
-  background-color: rgba(2, 0, 3, 0.949);
+  background-color: rgba(202, 208, 213, 0.949);
   width: 100%;
   height: 100px;
-  position: sticky;
+ 
   z-index: 2;
   top: 0px;
   margin: auto;
@@ -62,10 +82,10 @@ nav {
 }
 .subnav {
   /* grid-area: nav; */
-  background-color: rgba(222, 214, 225, 0.519);
-  width: 97%;
+  background-color: rgba(128, 58, 153, 0.699);
+  width: 100%;
   height: 100px;
-  position: sticky;
+  position: fixed;
   z-index: 2;
   top: 0px;
   margin: auto;
@@ -85,10 +105,12 @@ nav {
 .nav{
     width: 100%;
      grid-area: nav;
-       background-color: rgb(33, 3, 49);
+       background-color: rgb(220, 227, 221);
        margin: auto;
        height: 119px;
        padding: 0%;
+        position: fixed;
+        z-index: 1;
 
 
 }
@@ -124,13 +146,46 @@ nav {
 
 }
 a{
-    color: rgba(70, 17, 185, 0.851);
+    color: rgb(42, 4, 118);
     text-decoration: none;
     text-align: center;
     width: 100%;
     
 }
+
+a:hover{
+
+    text-decoration: underline;
+    text-shadow: 3px 3px 6px rgb(237, 236, 242);
+}
  
+.authentication #user:hover{
+    box-shadow: 3px 3px 6px rgb(237, 236, 242);
+      width: 48px;
+    height: 408x;
+
+}
+.authentication #user svg:hover{
+
+      width: 95%;
+    height: 95%;
+
+}
+
+
+.authentication span button{
+      width: 100%;
+    height: 100%;
+}
+
+
+
+.link{
+      display: flex;
+        justify-content:space-around;
+        align-items: center;
+}
+
 
 
 
@@ -294,7 +349,7 @@ flex-direction: column;
     background-color: rgba(0, 0, 0, 0.763);
 
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
     gap: 10px;
     padding: 10px;
 
@@ -347,5 +402,151 @@ footer {
     justify-content:space-around;
     align-items: center;
     color: rgb(189, 189, 194);
+
+}
+
+#user {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(152, 11, 96);
+
+    box-shadow: 5px 5px 8px rgb(101, 37, 37);
+  
+}
+
+#user #logout{
+
+        background-color: rgb(38, 75, 148);
+
+     border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+.authentication span{
+      width: 60px;
+    height: 60px;
+}
+
+
+
+   .subnav{
+
+          display: flex;
+          justify-content: space-around;
+       
+        padding: 0px;
+        height: 100px;
+        width: 100%;
+
+    }
+
+    .navPages{
+        width: 40%;
+          display: flex;
+        
+        
+
+          .link{
+            height: 80px;
+width: 60%;
+             display: flex;
+         justify-content: space-around;
+          }
+    }
+    .authentication{
+
+         width: 150px;
+         height: 100%;
+         display: flex;
+         justify-content: space-around;
+    }
+
+
+
+
+/* =================Mobile Responsive ============================ */
+@media (max-width:920px){
+
+    *{
+        font-size: 14px;
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+
+    body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 102px minmax(150px, auto) auto 300px;
+  grid-template-areas:
+  "nav"
+    "header"
+    "main"
+    "footer";
+  min-height: 100vh; 
+}
+
+#logo{
+    font-size:x-large;
+}
+
+
+    .nav{
+        background-color: black;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+         height: 100px;
+        width: 100%;
+     
+        
+    }
+
+
+    nav{
+           padding: 0px;
+
+    }
+
+    header{
+        height: 120px;
+        margin-top: 0px;
+    }
+    .subnav{
+
+          display: flex;
+       
+        padding: 0px;
+        height: 100px;
+        width: 100%;
+
+    }
+
+    .navPages{
+        width: 70%;
+          display: flex;
+        
+        
+
+          .link{
+width: 100%;
+             display: flex;
+         justify-content: space-around;
+          }
+    }
+    .authentication{
+
+         width: 150px;
+         padding:0px;
+         display: flex;
+         justify-content: space-around;
+    }
+
+.sec1{
+     font-size:xx-small;
+    height: 400px;
+}
+   
 
 }
