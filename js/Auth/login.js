@@ -24,28 +24,28 @@ email.focus();
 //============= Save data into LocalStorage ===================
 
 
-let data;
-async function myStorage() {
+// let data;
+// async function myStorage() {
 
-     let res = await fetch("https://json-server-iw8b.onrender.com/Users", { method: "GET" })
+//      let res = await fetch("https://json-server-iw8b.onrender.com/Users", { method: "GET" })
 
- data = await res.json();
+//  data = await res.json();
 
-    // let allUser = JSON.parse(localStorage.getItem("users")) || [];
-
-
+//     // let allUser = JSON.parse(localStorage.getItem("users")) || [];
 
 
-    localStorage.setItem("users",JSON.stringify(data));
 
 
-    console.log(data)
+//     localStorage.setItem("users",JSON.stringify(data));
+
+
+//     console.log(data)
 
 
 
     
-}
- myStorage()
+// }
+//  myStorage()
 
 
 
@@ -55,6 +55,7 @@ async function myStorage() {
 
 loginBtn.addEventListener('click', () => {
    
+//  myStorage()
 
     if(email.value && password.value){
 
@@ -78,15 +79,15 @@ async function login() {
 
     // Window.location.reload();
 
-    let res = await fetch("https://json-server-iw8b.onrender.com/Users", { method: "GET" })
+    // let res = await fetch("https://json-server-iw8b.onrender.com/Users", { method: "GET" })
 
-    users = await res.json();
-
-
+    // users = await res.json();
 
 
 
-//  let data = JSON.parse(localStorage.getItem("users"))
+
+
+ let users = JSON.parse(localStorage.getItem("users"))
 
 
 

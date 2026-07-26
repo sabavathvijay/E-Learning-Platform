@@ -11,6 +11,32 @@ let homeBtn = document.querySelector("#homeBtn");
 
 userName.focus();
 
+
+
+
+async function myStorage() {
+
+     let res = await fetch("https://json-server-iw8b.onrender.com/Users", { method: "GET" })
+
+let data = await res.json();
+
+    // let allUser = JSON.parse(localStorage.getItem("users")) || [];
+
+
+
+
+    localStorage.setItem("users",JSON.stringify(data));
+
+
+    console.log(data)
+
+
+
+    
+}
+
+
+
 let form = document.querySelector("form");
 
 form.addEventListener('submit', (e) => {
@@ -21,6 +47,8 @@ form.addEventListener('submit', (e) => {
 
 sumbitBtn.addEventListener('click', async () => {
     console.log("ClickEd...!")
+
+    myStorage();
 
 
 
@@ -62,6 +90,7 @@ sumbitBtn.addEventListener('click', async () => {
 
         if ( !has) {
             postData();
+           
             window.alert("User Registered")
             window.location.href="./login.html";
         }
@@ -88,6 +117,8 @@ let user;
 // Post User Data into JSON file
 async function postData() {
 
+      myStorage()
+
     user = {
 
         "userName": userName.value,
@@ -108,6 +139,21 @@ async function postData() {
         body: JSON.stringify(user)
 
     })
+
+    
+
+
+
+//      let res1 = await fetch("https://json-server-iw8b.onrender.com/Users", { method: "GET" })
+
+// let data1 = await res.json();
+
+//     // let allUser = JSON.parse(localStorage.getItem("users")) || [];
+
+
+
+
+//     localStorage.setItem("users",JSON.stringify(data1));
 
 
 
