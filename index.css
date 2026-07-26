@@ -597,7 +597,7 @@ a:hover {
     }
 
     #logo {
-        font-size: x-large;
+        font-size: 10px;
     }
 
 
@@ -608,7 +608,7 @@ a:hover {
         display: flex;
         justify-content: center;
         align-items: center;
-        height:100%;
+        height: 100%;
         width: 100%;
 
 
@@ -628,84 +628,97 @@ a:hover {
     .subnav {
 
         display: flex;
-        background-color: rgb(111, 100, 12);
+        background-color: rgb(167, 21, 130);
 
         padding: 0px;
         height: 90px;
         width: 100%;
+        border-radius: 0%;
+
 
     }
 
     .navPages {
         width: 70%;
-      
 
 
 
-      
+        border-radius: 0%;
+
     }
 
-      .link {
-            width: 60%;
-            display: flex;
-            justify-content: space-around;
-            /* text-decoration: underline; */
-            gap: 5px;
-            font-size: 11px;
-        }
+    .link {
+        width: 60%;
+        display: flex;
+        justify-content: space-around;
+        /* text-decoration: underline; */
+        gap: 5px;
+        font-size: 11px;
+    }
+    .link b{
+        font-size: 12px;
+    }
 
-          #logo{
-    font-size: medium;
-    width:50%;
-    
-}
+    #logo {
+        font-size: 14px;
+        width: 50%;
+
+    }
+
     .authentication {
 
         width: 150px;
         padding: 5px;
         display: flex;
         gap: 3px;
-        justify-content:space-around;
-        
+        justify-content: space-around;
+
+
     }
 
 
 
-    .authentication span{
+    .authentication span {
         color: aliceblue;
         width: auto;
-          background-color: blue;
-          border-radius: 30px;
-          /* gap: 3px; */
-           margin: auto;
-    }
-
-
-    .authentication span button{
-      
+        background-color: rgba(51, 51, 144, 0.734);
+        border-radius: 30px;
+        /* gap: 3px; */
+        margin: auto;
         
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .authentication span button {
+         font-size: 12px;
+         padding: 5px 0px;
+
         /* font-size: 2px; */
-          /* background-color: rgba(68, 68, 105, 0.307); */
-        padding: 2px;
-        width: 100%;
-       font-size: 12px;
+        /* background-color: rgba(68, 68, 105, 0.307); */
+        padding: 3px;
+        width: 95%;
+        font-size: 12px;
         text-align: center;
-         color: aliceblue;
+        color: aliceblue;
 
     }
 
 
-    .sec1  {
+    .sec1 {
         font-size: xx-small;
         min-height: 300px;
-    
-        
+
+
 
     }
-     .courses-container{
-    padding: 0px;
+
+    .courses-container {
+        padding: 0px;
         background-color: rgba(19, 52, 52, 0.49);
-     }
+    }
 
 
 }
