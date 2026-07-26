@@ -466,7 +466,7 @@ width: 60%;
 
 
 /* =================Mobile Responsive ============================ */
-@media (max-width:920px){
+@media screen and (max-width:920px){
 
     *{
         font-size: 14px;

@@ -389,10 +389,10 @@ footer {
 }
 
 /* ============================================== */
-@media (max-width:920px){
+@media screen and (max-width:920px){
 
     *{
-        font-size: 14px;
+        font-size: 12px;
         padding: 0px;
         margin: 0px;
         box-sizing: border-box;
@@ -401,7 +401,7 @@ footer {
     body {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 120px minmax(110px, auto) auto 200px;
+  grid-template-rows: 1fr minmax(110px, auto) auto 200px;
   grid-template-areas:
   "nav"
     "header"
@@ -410,36 +410,26 @@ footer {
   min-height: 100vh; 
 }
 
-#logo{
-    padding: 10px;
-    width: 100px;
-    font-size:large;
-}
+
 
 
 
     .nav{
-        background-color: rgba(42, 47, 3, 0.288);
-        display: flex;
-        justify-content:center;
-        align-items: center;
+        background-color: rgba(27, 35, 89, 0.834);
+       
          height: 100px;
         width: 100%;
      
-       
         
     }
 
 
     nav{
-          display: flex;
-        justify-content:center;
-        align-items: center;
-         height: 90px;
+          
+         height:auto;
         width: 100%;
-           padding: 0px;
-
          
+
     }
     
 
@@ -449,15 +439,14 @@ footer {
     }
     .subnav{
 
-
-          display: flex;
-          
-          position: fixed;
-           top: 0px;
+     
+          display: grid;
+          grid-template-columns: 2fr 1fr;
        
-        height: 90px;
-        width: 100%;
-        gap: 10px;
+       
+        height: auto;
+        
+      
         font-size:8px;
 
     }
@@ -466,17 +455,24 @@ footer {
         justify-content:space-between;
         align-items: center;
          height: 100px;
-        width: 70px;
+        width: 100%;
         font-size: medium;
     }
+
+    #logo{
+    font-size: medium;
+    width: 50%;
+    
+}
 
     .navPages{
 
       
-        width: 70%;
+        width: 100%;
           display: flex;
           gap: 0px;
         
+          font-size: smaller;
         
 
           .link{
@@ -487,7 +483,7 @@ width: 120px;
     }
     .authentication{
 
-         width: 140px;
+         width: 100%;
          padding:1px;
          display: flex;
          justify-content: normal;
@@ -510,3 +506,15 @@ a{
 
 
 }
+
+
+/* Target small mobile screens like Galaxy S23 */
+/* @media screen and (max-width: 480px) {
+  body {
+    font-size: 14px;
+    padding: 10px;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+} */

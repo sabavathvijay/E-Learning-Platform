@@ -213,7 +213,7 @@ form{
 }
 
 
-@media (max-width:430px){
+@media (max-width:700px){
 
 
     *{
@@ -234,23 +234,33 @@ form{
     .center{
         
           width: 70%;
-        height: 80%;
+        height: 70%;
     }
 form{
 
-      width: 80%;
-        height: 80%;
+      width: 90%;
+        height: 60%;
+        display: flex;
+        flex-direction: column;
 
 }
 
 .lables{
-     width: auto;
-        height: auto;
+     display: flex;
+        flex-direction: column;
+     width: 100%;
+        height: 80%;
 
 }
 .lables input{
     width: 100%;
-    height: 30px;
+    height: 40px;
+}
+
+button{
+     width: %;
+     height: 40px;
+
 }
 
 
