@@ -579,7 +579,7 @@ a:hover {
 
     * {
         font-size: 14px;
-        padding: 1px;
+        padding: 0px;
         margin: 0px;
         box-sizing: border-box;
     }
@@ -651,6 +651,7 @@ a:hover {
             justify-content: space-around;
             /* text-decoration: underline; */
             gap: 5px;
+            font-size: 11px;
         }
 
           #logo{
@@ -685,9 +686,9 @@ a:hover {
         
         /* font-size: 2px; */
           /* background-color: rgba(68, 68, 105, 0.307); */
-        padding: 5px;
+        padding: 2px;
         width: 100%;
-       
+       font-size: 12px;
         text-align: center;
          color: aliceblue;
 
