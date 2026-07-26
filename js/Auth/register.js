@@ -62,15 +62,13 @@ sumbitBtn.addEventListener('click', async () => {
 
         if ( !has) {
             postData();
-            window.confirm("User Registered")
+            window.alert("User Registered")
             window.location.href="./login.html";
         }
         else {
+            window.alert("User already Exist..!")
             window.location.href="../../index.html";
-            window.confirm("User already Exist..!")
         }
-
-
 
 
 
@@ -84,13 +82,13 @@ homeBtn.addEventListener("click",() =>{
 
 })
 
-
+let user;
 
 
 // Post User Data into JSON file
 async function postData() {
 
-    let user = {
+    user = {
 
         "userName": userName.value,
         "email": email.value,
@@ -122,50 +120,50 @@ async function postData() {
 
 
 
-// Function to Delete Multiple Users
+// // Function to Delete Multiple Users
 
-async function deleteUpto(form,to) {
+// async function deleteUpto(form,to) {
 
-    for(i=form;i<=to;i++){
-
-
-        let res = await fetch(`https://json-server-iw8b.onrender.com/Users/${i}`, {
-        method: "DELETE"    })
-
-        console.log("Deleted...!")
+//     for(i=form;i<=to;i++){
 
 
+//         let res = await fetch(`https://json-server-iw8b.onrender.com/Users/${i}`, {
+//         method: "DELETE"    })
+
+//         console.log("Deleted...!")
 
 
 
 
 
-    }
 
-    
-}
 
-// Function to to Delete  Single User
-
-async function deleteUpto(id) {
+//     }
 
     
+// }
 
+// // Function to to Delete  Single User
 
-        let res = await fetch(`https://json-server-iw8b.onrender.com/Users/${id}`, {
-        method: "DELETE"    })
-
-        console.log("Deleted...!")
-
-
-
-
-
-
+// async function deleteUpto(id) {
 
     
 
+
+//         let res = await fetch(`https://json-server-iw8b.onrender.com/Users/${id}`, {
+//         method: "DELETE"    })
+
+//         console.log("Deleted...!")
+
+
+
+
+
+
+
     
-}
-//deleteUpto(1,20);
-// deleteUpto(8);
+
+    
+// }
+// //deleteUpto(1,20);
+// // deleteUpto(8);

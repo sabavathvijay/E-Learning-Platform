@@ -10,7 +10,7 @@ email.focus();
 
 
 
-window.onload= () =>{
+
 
     myform.addEventListener('submit', (e) => {
     
@@ -18,19 +18,18 @@ window.onload= () =>{
 
         //  login()
     })
-}
 
 
 
 //============= Save data into LocalStorage ===================
 
 
-
+let data;
 async function myStorage() {
 
      let res = await fetch("https://json-server-iw8b.onrender.com/Users", { method: "GET" })
 
-    let data = await res.json();
+ data = await res.json();
 
     // let allUser = JSON.parse(localStorage.getItem("users")) || [];
 
@@ -40,7 +39,7 @@ async function myStorage() {
     localStorage.setItem("users",JSON.stringify(data));
 
 
-    console.log("data")
+    console.log(data)
 
 
 
@@ -73,6 +72,7 @@ console.log("email,password")
 
 
 
+let users;
 
 async function login() {
 
@@ -80,7 +80,7 @@ async function login() {
 
     let res = await fetch("https://json-server-iw8b.onrender.com/Users", { method: "GET" })
 
-    let data = await res.json();
+    users = await res.json();
 
 
 
@@ -93,7 +93,7 @@ async function login() {
 
     let matched = false;
 
-    data.forEach(user => {
+    users.forEach(user => {
 
 console.log(matched)
 
@@ -115,7 +115,7 @@ console.log(matched)
 
         console.log("You are a User..! \n Welcome You Logined");
 
-        window.confirm("Welcom Your Login Successfully....!")
+        window.alert("Welcom Your Login Successfully....!")
         window.location.href = "../home/home.html";
     }
 
@@ -132,8 +132,6 @@ console.log(matched)
         }
         
         
-
-
 
     }
 

@@ -5,6 +5,10 @@
     /* text-align: center; */
 }
 
+.sec2, .courses-container{
+    padding: 10px;
+    
+}
 /* Body Grid Layout */
 body {
     display: grid;
@@ -575,7 +579,7 @@ a:hover {
 
 
 
-@media screen and (max-width:920px) {
+@media screen and (max-width:550px) {
 
     * {
         font-size: 14px;
@@ -681,25 +685,22 @@ a:hover {
     .authentication span {
         color: aliceblue;
         width: auto;
-        background-color: rgba(51, 51, 144, 0.734);
+        background-color: blue;
         border-radius: 30px;
         /* gap: 3px; */
         margin: auto;
         
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 
 
     .authentication span button {
          font-size: 12px;
-         padding: 5px 0px;
+
 
         /* font-size: 2px; */
         /* background-color: rgba(68, 68, 105, 0.307); */
-        padding: 3px;
-        width: 95%;
+        padding: 2px;
+        width: 100%;
         font-size: 12px;
         text-align: center;
         color: aliceblue;
@@ -721,4 +722,12 @@ a:hover {
     }
 
 
+}
+
+.link b{
+    color: aliceblue;
+}
+.courses-container{
+    border-radius: 5px;
+    padding: 10px;
 }

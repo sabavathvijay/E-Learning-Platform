@@ -8,7 +8,7 @@ user.addEventListener('submit', (e) => {
 
 
 
-   let list = document.createElement("")
+   //let list = document.createElement("")
 
 
 
