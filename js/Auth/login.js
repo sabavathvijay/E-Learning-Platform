@@ -25,26 +25,26 @@ email.focus();
 
 
 // let data;
-// async function myStorage() {
+async function myStorage() {
 
-//      let res = await fetch("https://json-server-iw8b.onrender.com/Users", { method: "GET" })
+     let res = await fetch("https://json-server-iw8b.onrender.com/Users", { method: "GET" })
 
-//  data = await res.json();
+let  data = await res.json();
 
-//     // let allUser = JSON.parse(localStorage.getItem("users")) || [];
-
-
+    // let allUser = JSON.parse(localStorage.getItem("users")) || [];
 
 
-//     localStorage.setItem("users",JSON.stringify(data));
 
 
-//     console.log(data)
+    localStorage.setItem("users",JSON.stringify(data));
+
+
+    console.log(data)
 
 
 
     
-// }
+}
 //  myStorage()
 
 
@@ -55,7 +55,7 @@ email.focus();
 
 loginBtn.addEventListener('click', () => {
    
-//  myStorage()
+ myStorage()
 
     if(email.value && password.value){
 

@@ -11,6 +11,14 @@ let homeBtn = document.querySelector("#homeBtn");
 
 userName.focus();
 
+let form = document.querySelector("form");
+
+form.addEventListener('submit', (e) => {
+
+    e.preventDefault();
+
+})
+
 
 
 
@@ -18,7 +26,7 @@ async function myStorage() {
 
      let res = await fetch("https://json-server-iw8b.onrender.com/Users", { method: "GET" })
 
-let data = await res.json();
+let data = await res.json() || [];
 
     // let allUser = JSON.parse(localStorage.getItem("users")) || [];
 
@@ -37,13 +45,7 @@ let data = await res.json();
 
 
 
-let form = document.querySelector("form");
 
-form.addEventListener('submit', (e) => {
-
-    e.preventDefault();
-
-})
 
 sumbitBtn.addEventListener('click', async () => {
     console.log("ClickEd...!")
@@ -95,6 +97,8 @@ sumbitBtn.addEventListener('click', async () => {
             window.location.href="./login.html";
         }
         else {
+
+            myStorage();
             window.alert("User already Exist..!")
             window.location.href="../../index.html";
         }
@@ -213,3 +217,6 @@ async function postData() {
 // }
 // //deleteUpto(1,20);
 // // deleteUpto(8);
+
+
+
