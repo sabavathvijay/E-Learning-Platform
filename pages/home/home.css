@@ -534,7 +534,9 @@ footer {
 
         padding: 0px;
         height: 100px;
+        gap: 5px;
         width: 100%;
+        border-radius: 0px;
 
     }
 
@@ -561,7 +563,7 @@ footer {
     }
 
     .sec1 {
-        font-size: xx-small;
+       
         height: 400px;
     }
 

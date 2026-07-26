@@ -579,7 +579,7 @@ a:hover {
 
     * {
         font-size: 14px;
-        padding: 0px;
+        padding: 1px;
         margin: 0px;
         box-sizing: border-box;
     }
@@ -646,22 +646,26 @@ a:hover {
     }
 
       .link {
-            width: 70%;
+            width: 60%;
             display: flex;
             justify-content: space-around;
+            /* text-decoration: underline; */
+            gap: 5px;
         }
 
           #logo{
     font-size: medium;
-    width:45%;
+    width:50%;
     
 }
     .authentication {
 
         width: 150px;
-        padding: 0px;
+        padding: 5px;
         display: flex;
+        gap: 3px;
         justify-content:space-around;
+        
     }
 
 
