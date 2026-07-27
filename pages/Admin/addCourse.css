@@ -5,21 +5,21 @@
 
 }
 
-@media (max-width:460px) {}
+/* @media (max-width:460px) {} */
 
 body {
     width: 100%;
     height: 100vh;
-    background-color: rgba(132, 18, 128, 0.245);
+    background-color: rgba(185, 158, 184, 0.245);
 
     padding-top: 20px;
-    overflow: hidden;
+   overflow: hidden;
 }
 
 textarea {
     min-width: 95%;
     min-height: 100px;
-    overflow: hidden;
+   overflow: hidden;
 }
 
 input,
@@ -28,6 +28,13 @@ button {
     border-radius: 5px;
     height: 40px;
 }
+button{
+    width: auto;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.236);
+    margin: auto;
+}
+
 
 
 fieldset {
@@ -37,6 +44,12 @@ fieldset {
     background-color: bisque;
     padding: 10px;
     border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 overflow: hidden;
 }
 
@@ -58,7 +71,7 @@ form {
     border-radius: 10px;
     padding: 15px;
     margin: auto;
-    overflow: hidden;
+   overflow: hidden;
 }
 
 .head {
@@ -67,6 +80,7 @@ form {
     padding: 20px;
     border-radius: 5px;
     background-color: aliceblue;
+    
 }
 
 .inputs{
@@ -77,7 +91,7 @@ form {
     background-color: aliceblue;
 
 
-    overflow: hidden;
+   overflow: hidden;
 
       display: flex;
     flex-direction: column;

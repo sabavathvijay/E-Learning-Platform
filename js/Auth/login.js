@@ -12,12 +12,12 @@ email.focus();
 
 
 
-    myform.addEventListener('submit', (e) => {
-    
-        e.preventDefault();
+myform.addEventListener('submit', (e) => {
 
-        //  login()
-    })
+    e.preventDefault();
+
+    //  login()
+})
 
 
 
@@ -27,23 +27,23 @@ email.focus();
 // let data;
 async function myStorage() {
 
-     let res = await fetch("https://json-server-iw8b.onrender.com/Users", { method: "GET" })
+    let res = await fetch("https://json-server-iw8b.onrender.com/Users", { method: "GET" })
 
-let  data = await res.json();
+    let data = await res.json();
 
     // let allUser = JSON.parse(localStorage.getItem("users")) || [];
 
 
 
 
-    localStorage.setItem("users",JSON.stringify(data));
+    localStorage.setItem("users", JSON.stringify(data));
 
 
     console.log(data)
 
 
 
-    
+
 }
 //  myStorage()
 
@@ -54,12 +54,21 @@ let  data = await res.json();
 
 
 loginBtn.addEventListener('click', () => {
-   
- myStorage()
 
-    if(email.value && password.value){
+    myStorage()
 
-        login()
+    if (email.value && password.value) {
+
+        if (email.value === "admin@gmail.com" && password.value === "admin") {
+
+            window.location.href = "../Admin/addCourse.html"
+
+        }
+        else{
+
+            login()
+        }
+
     }
 
 })
@@ -87,7 +96,7 @@ async function login() {
 
 
 
- let users = JSON.parse(localStorage.getItem("users"))
+    let users = JSON.parse(localStorage.getItem("users"))
 
 
 
@@ -96,14 +105,14 @@ async function login() {
 
     users.forEach(user => {
 
-console.log(matched)
+        console.log(matched)
 
         if (user.email === email.value && user.password === password.value) {
 
             matched = true;
 
-            email.innerHTML=" "
-            password.innerHTML=" "
+            email.innerHTML = " "
+            password.innerHTML = " "
 
 
         }
@@ -124,15 +133,15 @@ console.log(matched)
         let want = window.confirm("Sorry Your Login is Failed....!\n Register first...!")
         console.log("Sorry Your Login is Failed....!\n Register first...!");
 
-        if(want){
+        if (want) {
 
-            window.location.href="./register.html";
+            window.location.href = "./register.html";
         }
-        else{
-            window.location.href="./login.html";
+        else {
+            window.location.href = "./login.html";
         }
-        
-        
+
+
 
     }
 
@@ -143,8 +152,8 @@ console.log(matched)
 
 }
 
-homeBtn.addEventListener("click",() =>{
-     window.location.href="../../index.html";
+homeBtn.addEventListener("click", () => {
+    window.location.href = "../../index.html";
 
 })
 

@@ -24,6 +24,58 @@ body {
 
 }
 
+
+/* ======================== Added  Dynamically ====================== */
+
+center{
+    background-color: rgba(198, 141, 18, 0.889);
+
+    display: flex;
+
+       justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+
+.items{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    
+    margin: auto;
+    
+    
+}
+
+figure{
+    
+        background-color: rgba(0, 0, 0, 0.204);
+      border-radius: 10px;
+       
+    }
+
+
+.course{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+figure img{
+height: 60%;
+    width: 80%;
+}
+
+/* ========================================================== */
+
 /* Header */
 /* ============================= */
 header {
@@ -297,7 +349,7 @@ section {
 /* == Sec2 ==== */
 .sec2 {
 
-    padding-top: 130px;
+    /* padding-top: 130px; */
     color: blue;
     display: flex;
     justify-content: center;
@@ -312,12 +364,14 @@ section {
     height: auto;
     background-color: rgba(0, 0, 0, 0.763);
 
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 10px;
-    padding: 10px;
+  
 
 }
+
+
+
+
+
 
 .course {
     color: black;
