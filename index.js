@@ -61,9 +61,8 @@ async function getCourse() {
         btn.addEventListener('click', () => {
             console.log("Enroll...!")
 
-            let id = course.id;
             //Course ID
-            enroll(id);
+            enroll(course.id);
         })
 
 
@@ -80,15 +79,10 @@ async function getCourse() {
 
 // ====================Enrolling to Course ===============
 
-
-
-
-
 async function enroll(courseId) {
 
     //Window TO collect Enrolled Course
 
-    c_id=courseId;
 
     let want = window.confirm("Do you want to Enroll into this COURSE..? ")
 
@@ -97,37 +91,34 @@ async function enroll(courseId) {
         window.open(`./pages/Enroll/enroll.html`, " ", "width=300px height=400px")
 
 
+        let courseName = document.querySelector("#courseName");
+        let email = document.querySelector("#email");
+        let courseID = document.querySelector("#courseID");
+
+
+        let name = courseName.value;
+        let mail = email.value;
+        let c_id = courseID.innerHTML = courseID;
+
+
+        let enrolled = {
+            "courseName": name,
+            "email": mail,
+            "courseID": c_id
+
+        }
 
 
 
-        // Name = courseName.value;
-        // mail = email.value;
-        // c_id = courseID.innerHTML = courseID;
 
 
-        // let enrolled = {
-        //     "courseName": Name,
-        //     "email": mail,
-        //     "courseID": c_id
-
-        // }
-
-
-        // console.log(enrolled)
-
-
-
-        // let res = await fetch("  http://localhost:3001/enrolled", {
-        //     method: "PATCH",
-        //     headers: {
-        //         "Content-Type": "application/json"
-        //     },
-        //     body: JSON.stringify(
-        //         {
-        //             ""
-        //         }
-        //     )
-        // })
+        let res = await fetch(" http://localhost:3000/profile", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(enrolled)
+        })
 
 
 
@@ -135,8 +126,8 @@ async function enroll(courseId) {
 
     }
 
-    else {
-        alert("OK Alright, Happy Learning")
+    else{
+        alert("OK Alright, Happy")
     }
 
 
@@ -146,55 +137,6 @@ async function enroll(courseId) {
 
 
 }
-
-
-
-
-
-
-
-
-// let courseName = document.querySelector("#courseName");
-// let email = document.querySelector("#email");
-// let courseID = document.querySelector("#courseID");
-// let courseEnroll = document.querySelector("#courseEnroll");
-
-
-// console.log(email.value)
-// courseEnroll.addEventListener("click",async () =>{
-
-//       Name = courseName.value;
-//         mail = email.value;
-//     //  courseID.innerHTML = ;
-
-        
-
-
-
-
-
-//         let enrolled = {
-//             "courseName": Name,
-//             "email": mail,
-//             "courseID": c_id
-
-//         }
-
-
-
-//          let res = await fetch("  http://localhost:3001/enrolled", {
-//             method: "POST",
-//             headers: {
-//                 "Content-Type": "application/json"
-//             },
-//             body: JSON.stringify(enrolled)
-//         })
-
-
-// })
-
-
-
 
 
 
