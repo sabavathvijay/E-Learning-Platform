@@ -76,12 +76,14 @@ form {
 /* Tablet screens */
 @media (min-width: 700px) {
   main {
-    max-width: 700px;
+    width:90% ;
+    height: 80%;
     background-color: rgba(77, 71, 14, 0.267);
   }
 
   fieldset {
-    width: 90%;
+    width: 80%;
+    height: 90%;
   }
 
   .lables input {
@@ -92,7 +94,7 @@ form {
 /* Desktop screens */
 @media (min-width: 1100px) {
   main {
-    max-width: 900px;
+    max-width: 50%;
     background-color: rgba(5, 3, 38, 0.866);
   }
 
