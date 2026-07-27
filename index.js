@@ -30,6 +30,8 @@ async function getCourse() {
         return `
 
 
+
+
           <div class="course">
                         <h2>Course : ${course.courseName}</h2>
                         <figure>
@@ -59,7 +61,7 @@ async function getCourse() {
         btn = document.querySelector(`#enroll${course.id}`);
 
         btn.addEventListener('click', () => {
-            console.log("Enroll...!")
+            console.log("Enroll... !")
 
             //Course ID
             enroll(course.id);

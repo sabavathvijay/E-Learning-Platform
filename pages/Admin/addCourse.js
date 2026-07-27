@@ -88,6 +88,7 @@ async function addMyCourse(course) {
 addCourse.addEventListener("click", () => {
 
     myCourse();
+    
 
 
 })
