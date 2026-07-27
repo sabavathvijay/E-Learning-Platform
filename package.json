@@ -4,16 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "json-server --watch courses.json --host 0.0.0.0  $PORT"
+   "start": "json-server --watch courses.json --host 0.0.0.1 $PORT"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sabavathvijay/E-Learning-Platform.git"
   },
-"dependencies": {
+  "devEngines": {
      "json-server": "0.17.4"
-},
-
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

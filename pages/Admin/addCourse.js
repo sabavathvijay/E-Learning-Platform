@@ -20,8 +20,8 @@ poster.innerHTML = ""
 description.innerHTML = ""
 
 
-
 courseName.focus();
+
 
 console.log(form)
 
@@ -88,7 +88,6 @@ async function addMyCourse(course) {
 addCourse.addEventListener("click", () => {
 
     myCourse();
-    
 
 
 })
@@ -193,7 +192,7 @@ let homeBtn = document.querySelector(".homeBtn");
 
 homeBtn.addEventListener("click", () => {
 
-    alert("clicked")
+    alert("move to Home Page")
     window.location.href = "../../index.html";
 
 })
