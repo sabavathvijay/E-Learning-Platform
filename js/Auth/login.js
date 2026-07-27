@@ -27,7 +27,7 @@ myform.addEventListener('submit', (e) => {
 // let data;
 async function myStorage() {
 
-    let res = await fetch("https://json-server-iw8b.onrender.com/Users", { method: "GET" })
+    let res = await fetch("https://json-server-apis-0w5g.onrender.com/users", { method: "GET" })
 
     let data = await res.json();
 
@@ -88,7 +88,7 @@ async function login() {
 
     // Window.location.reload();
 
-    let res = await fetch("https://json-server-iw8b.onrender.com/Users", { method: "GET" })
+    let res = await fetch("https://json-server-apis-0w5g.onrender.com/users", { method: "GET" })
 
     users = await res.json();
 
