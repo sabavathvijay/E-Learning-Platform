@@ -88,15 +88,15 @@ async function login() {
 
     // Window.location.reload();
 
-    // let res = await fetch("https://json-server-iw8b.onrender.com/Users", { method: "GET" })
+    let res = await fetch("https://json-server-iw8b.onrender.com/Users", { method: "GET" })
 
-    // users = await res.json();
-
-
+    users = await res.json();
 
 
 
-    let users = JSON.parse(localStorage.getItem("users"))
+
+
+    // let users = JSON.parse(localStorage.getItem("users"))
 
 
 
