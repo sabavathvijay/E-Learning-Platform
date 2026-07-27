@@ -18,7 +18,7 @@ form.addEventListener('submit', (e) => {
 
 async function getCourse() {
 
-    let res = await fetch(" http://localhost:3000/courses", { method: "GET" })
+    let res = await fetch("https://json-server-apis-0w5g.onrender.com/courses", { method: "GET" })
 
     let courses = await res.json() || [];
 
@@ -114,7 +114,7 @@ async function enroll(courseId) {
 
 
 
-        let res = await fetch(" http://localhost:3000/profile", {
+        let res = await fetch(" https://json-server-apis-0w5g.onrender.com/enrolled", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

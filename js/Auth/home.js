@@ -53,7 +53,7 @@ let container = document.querySelector(".courses-container")
 
 async function getCourse() {
 
-    let res = await fetch(" http://localhost:3000/courses", { method: "GET" })
+    let res = await fetch(" https://json-server-apis-0w5g.onrender.com/courses", { method: "GET" })
 
     let courses = await res.json() || [];
 
@@ -132,7 +132,7 @@ let winn;
 
 async function play(courseID) {
 
-      let res = await fetch(" http://localhost:3000/courses", { method: "GET" })
+      let res = await fetch(" https://json-server-apis-0w5g.onrender.com/courses", { method: "GET" })
     let courses = await res.json();
 
     courses.forEach((course) =>{
@@ -171,7 +171,7 @@ function enroll() {
     if (want) {
 
 
-        
+
     }
 
 
