@@ -13,6 +13,27 @@
       "description": "Have full course for free..!",
       "courseID": "DevOPs Full Course7951533",
       "id": 2
+    },
+    {
+      "courseName": "Telusko",
+      "poster": "<iframe width=\"26\" height=\"15\" src=\"https://www.youtube.com/embed/j_JuhAWlEaI?si=ehHt-8dkmyrG1Kc9\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>",
+      "description": "watch it",
+      "courseID": "Telusko57907",
+      "id": 3
+    },
+    {
+      "courseName": "JAVA",
+      "poster": "https://imgs.search.brave.com/qffru3qN21t93AukyBm37hBQyeRtEAtkFGab102GK7g/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTQz/MTg3NjMwNy9waG90/by9idXNpbmVzc21h/bi1jbGlja3MtamF2/YS1wcm9ncmFtbWlu/Zy1sYW5ndWFnZS1h/cHBsaWNhdGlvbi1j/b25jZXB0LW9uLXZp/cnR1YWwtc2NyZWVu/LmpwZz9zPTYxMng2/MTImdz0wJms9MjAm/Yz1neGhVZFdxay01/UTk4N1JDVXBBLXpJ/Wk14emJDSFNueUdw/Z1RIVXZ4ZmN3PQ",
+      "description": "here you can learn the Java upto Advance Java completely freee...!",
+      "courseID": "JAVA8573299",
+      "id": 5
+    },
+    {
+      "courseName": "python",
+      "poster": "https://imgs.search.brave.com/e5rEOlDOCMO0RHmc9gwnDD11btVkttAowVkppKaZHpE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9kdG12/YW1haHM0MHV4LmNs/b3VkZnJvbnQubmV0/L3B1YmxpYy9jb3Vy/c2UvY291cnNlLTMy/MTktUEZCLmpwZw",
+      "description": "python is programming language and learn its for free course.",
+      "courseID": "python5152123",
+      "id": 6
     }
   ]
 }
