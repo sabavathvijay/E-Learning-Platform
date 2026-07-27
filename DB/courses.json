@@ -13,20 +13,6 @@
       "description": "Have full course for free..!",
       "courseID": "DevOPs Full Course7951533",
       "id": 2
-    },
-    {
-      "courseName": "Telusko",
-      "poster": "<iframe width=\"26\" height=\"15\" src=\"https://www.youtube.com/embed/j_JuhAWlEaI?si=ehHt-8dkmyrG1Kc9\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>",
-      "description": "watch it",
-      "courseID": "Telusko57907",
-      "id": 3
-    },
-    {
-      "courseName": "JAVA",
-      "poster": "<iframe width=\"40\" height=\"215\" src=\"https://www.youtube.com/embed/j_JuhAWlEaI?si=ehHt-8dkmyrG1Kc9\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>",
-      "description": "qdwefr",
-      "courseID": "JAVA2551366",
-      "id": 4
     }
   ]
 }
