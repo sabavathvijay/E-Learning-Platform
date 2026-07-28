@@ -121,26 +121,26 @@ addCourse.addEventListener("click", () => {
 //         method:"DELETE"   })
 
 //         console.log("Deleted...!")
-        
+
 //     } catch (error) {
-        
+
 //     }
 
-  
+
 
 // })
 
 
 // async function deletTo(id) {
 
-    
+
 
 
 //         let res = await fetch(`http://localhost:3000/courses/${id}`, {
 //         method: "DELETE"   })
 
 //         console.log("Deleted...!")
-    
+
 // }
 
 
@@ -164,13 +164,13 @@ addCourse.addEventListener("click", () => {
 //               let res = await fetch(`http://localhost:3000/courses/${i}`, {
 //         method: "DELETE"    })
 
-        
+
 //         console.log("Deleted...!")
-            
+
 //         } catch (error) {
-            
+
 //         }
-      
+
 
 
 
@@ -180,7 +180,7 @@ addCourse.addEventListener("click", () => {
 
 //     }
 
-    
+
 // }
 
 
@@ -196,5 +196,155 @@ homeBtn.addEventListener("click", () => {
     window.location.href = "../../index.html";
 
 })
+
+
+
+// ====================== ADDED DYNAMIC ======================
+
+
+
+// let container = document.querySelector(".courses-container")
+
+
+
+
+// async function getCourse() {
+
+//     let res = await fetch(" https://json-server-apis-0w5g.onrender.com/courses", { method: "GET" })
+
+//     let courses = await res.json() || [];
+
+//     let items = document.createElement("div");
+
+
+//     items.innerHTML = courses.map((course) => {
+
+
+//         //=================================CHANGE======================================================
+//         return `
+
+
+          
+//         <div class="course">
+//                         <h2>Course : ${course.courseName}</h2>
+                       
+                       
+//                         <figure>
+                          
+//                     <!-- 
+                    
+//                     ${course.poster}
+                    
+//                     -->
+
+//                      <img src='${course.poster}' alt="NO Image" />
+                    
+                    
+
+//                             <figcaption>
+//                             Description : ${course.description}
+//                             </figcaption>
+//                         </figure>
+                     
+//         </div>
+
+
+// `
+
+//     }).join(" ");
+
+
+//     container.appendChild(items);
+
+//     items.classList.add("items");
+
+//     let btn;
+//     courses.forEach(course => {
+
+//         btn = document.querySelector(`#enroll${course.id}`);
+
+//         btn.addEventListener('click', () => {
+//             console.log("Enroll...!")
+//             //   enroll();
+
+//             alert(course.courseID)
+//             play(course.courseID);
+
+//         })
+
+
+//     });
+
+
+
+//     console.log(items)
+
+
+
+
+// }
+
+
+
+// //=======================Play ================
+
+// let winn;
+
+// async function play(courseID) {
+
+//     let res = await fetch(" https://json-server-apis-0w5g.onrender.com/courses", { method: "GET" })
+//     let courses = await res.json();
+
+//     courses.forEach((course) => {
+
+//         if (courseID === course.courseID) {
+
+
+//             window.open(`../PlayList/playCourse.html`, "", "width=600px, height=500px")
+
+//             // winn=window.open("about:blank","","width=600px, height=500px")
+
+
+
+//         }
+
+//         // winn.innerHTML=`
+
+
+
+
+
+//     })
+
+
+// }
+
+
+
+
+// // ====================Enrolling to Course ===============
+
+// function enroll() {
+
+//     let want = window.confirm("Do you want to Enroll into this COURSE..? ")
+
+//     if (want) {
+
+
+
+//     }
+
+
+
+
+
+
+
+// }
+
+
+
+// addEventListener("DOMContentLoaded", getCourse);
+
 
 

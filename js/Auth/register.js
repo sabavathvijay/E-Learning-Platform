@@ -24,14 +24,14 @@ form.addEventListener('submit', (e) => {
 
 async function myStorage() {
 
-     let res = await fetch("https://json-server-iw8b.onrender.com/Users", { method: "GET" })
+     let res = await fetch("https://json-server-apis-0w5g.onrender.com/users", { method: "GET" })
 
 let data = await res.json() || [];
 
     // let allUser = JSON.parse(localStorage.getItem("users")) || [];
 
 
-    
+
 
 
     localStorage.setItem("users",JSON.stringify(data));
@@ -57,7 +57,7 @@ sumbitBtn.addEventListener('click', async () => {
 
     if (email.value && userName.value && email.value && password.value && mobile.value) {
 
-        let res = await fetch("https://json-server-iw8b.onrender.com/Users", { method: "GET" })
+        let res = await fetch("https://json-server-apis-0w5g.onrender.com/users", { method: "GET" })
 
         let data = await res.json();
 
@@ -136,7 +136,7 @@ async function postData() {
 
     console.log("Data Posted")
 
-    let res = await fetch("https://json-server-iw8b.onrender.com/Users", {
+    let res = await fetch("https://json-server-apis-0w5g.onrender.com/users", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -149,7 +149,7 @@ async function postData() {
 
 
 
-//      let res1 = await fetch("https://json-server-iw8b.onrender.com/Users", { method: "GET" })
+//      let res1 = await fetch("https://json-server-apis-0w5g.onrender.com/users", { method: "GET" })
 
 // let data1 = await res.json();
 
@@ -178,7 +178,7 @@ async function postData() {
 //     for(i=form;i<=to;i++){
 
 
-//         let res = await fetch(`https://json-server-iw8b.onrender.com/Users/${i}`, {
+//         let res = await fetch(`https://json-server-apis-0w5g.onrender.com/users/${i}`, {
 //         method: "DELETE"    })
 
 //         console.log("Deleted...!")
@@ -201,7 +201,7 @@ async function postData() {
     
 
 
-//         let res = await fetch(`https://json-server-iw8b.onrender.com/Users/${id}`, {
+//         let res = await fetch(`https://json-server-apis-0w5g.onrender.com/users/${id}`, {
 //         method: "DELETE"    })
 
 //         console.log("Deleted...!")

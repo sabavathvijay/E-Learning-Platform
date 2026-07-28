@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,41 +8,114 @@
 
     <link rel="stylesheet" href="./addCourse.css">
 </head>
+
 <body>
 
     <fieldset>
 
-<legend>
-    ADD Course
-</legend>
+        <legend>
+            ADD Course
+        </legend>
 
-<form >
+        <form>
 
-    <div class="head">
-        <!-- <form >
+            <div class="head">
+                <!-- <form >
             <input id="deleteID" type="text" placeholder="Delele ID">
             <input id="deleteIDf" type="submit"">
 
             
 
         </form> -->
-        <h2>Add your Course</h2>
-    </div>
+                <h2>Add your Course</h2>
+            </div>
 
-    <!-- Inputs -->
-    <div class="inputs">
+            <!-- Inputs -->
+            <div class="inputs">
 
-<input type="text" placeholder="Course Name :" id="courseName"   required >
+                <input type="text" placeholder="Course Name :" id="courseName" required>
 
-<input type="text" placeholder="Lecture Poster URL:" id="poster" required>
-<input type="text" placeholder="Lecture URL:" id="lectureURL" required>
-<textarea  id="description" placeholder="Provide the Description about the Course :"   required>
+                <input type="text" placeholder="Lecture Poster URL:" id="poster" required>
+                <input type="text" placeholder="Lecture URL:" id="lectureURL" required>
+                <textarea id="description" placeholder="Provide the Description about the Course :" required>
 <input type="hidden" placeholder="Lecture URL:" id="courseID"  required>
 
 
 </textarea>
 
-<button type="submit" id="addCourse"> ADD Course </button>
+                <button type="submit" id="addCourse"> ADD Course </button>
+
+
+
+
+            </div>
+
+
+
+
+
+        </form>
+
+        <div class="option">
+
+
+
+
+
+            <button class="homeBtn" id="homeBtn">Home</button>
+
+
+
+        </div>
+
+        <!-- <div class="display">
+
+</div> -->
+
+    </fieldset>
+
+    <!-- ALL Courses  -->
+    <div class="container">
+
+
+
+        <!-- selectio -->
+        <section class="sec2" id="courses">
+
+
+
+            <!-- 
+                   <center >
+
+                        <h1>✨Happy Learning🏅</h1>
+
+
+                </center> -->
+
+            <div class="courses-container">
+
+                <!-- ==================================== -->
+                <!-- 1 -->
+
+
+                <!-- ALL COURSES -->
+
+
+
+
+                <!-- ========================================== -->
+
+
+
+            </div>
+
+
+
+
+
+        </section>
+
+
 
 
 
@@ -50,30 +124,7 @@
 
 
 
-
-
-</form>
-
-  <div class="option">
-
-         
-                   
-    
-                
-                         <button class="homeBtn" id="homeBtn">Home</button>
-    
-                   
-
-                </div>
-
-<!-- <div class="display">
-
-</div> -->
-
-    </fieldset>
-
-
-
     <script src="./addCourse.js"></script>
 </body>
+
 </html>
