@@ -67,7 +67,7 @@ async function addMyCourse(course) {
 
     if (courseName.value && poster.value && description.value && lecture.value) {
 
-        let res = await fetch(" http://localhost:3000/courses", {
+        let res = await fetch("https://json-server-apis-0w5g.onrender.com/courses", {
             method: "POST",
             headers: {
                 "content-Type": "application/json"
@@ -76,11 +76,15 @@ async function addMyCourse(course) {
                 course
             )
         })
+
+           alert("Course Added....!")
+           window.location.reload()
     }
     else {
         // alert("Fill the Course Details")
     }
 
+   
 
 }
 
@@ -218,14 +222,21 @@ async function allCourses(){
             throw new Error("Courses not Fetched...!")
         }
 
-        coursesContainer.innerHTML = courses.map((course) =>{
+        let items = document.createElement("div")
+        items.innerHTML = courses.map((course) =>{
 
             return `
             
             <div class="course">
             
-            <b> ${course.courseName}
-          
+            <b> ${course.id}</b>
+            <b> ${course.courseName}</b>
+            <img src="${course.poster}" /> 
+
+            <div class="btns">
+            <button id="delete${course.id}" class="delete"> Delete</button>
+            <button id="edit${course.id}" class="edit">Edit</button>
+          </div>
             
             </div>
             
@@ -237,18 +248,53 @@ async function allCourses(){
 
         }).join(" ");
 
+        coursesContainer.appendChild(items)
 
+
+        items.classList.add("items")
 
 
         
     } catch (error) {
         console.warn(error)
+
+
     }
 
 
 
+    courses.forEach(course => {
+
+        let editE = document.querySelector(`#delete${course.id}`);
+        let deleteE = document.querySelector(`#delete${course.id}`);
+
+
+        deleteE.addEventListener("click",()=>{
+
+            alert("Want to Delete...!")
+
+            deleteCourse(course.id);
+
+         
+        })
+
+        
+    });
+
+
 
 }
+
+async function deleteCourse(id) {
+
+    let res = await fetch(` https://json-server-apis-0w5g.onrender.com/courses/${id}`, { method: "DELETE" })
+    
+   window.location.reload()
+
+}
+
+
+
 
 
 addEventListener("DOMContentLoaded", allCourses);

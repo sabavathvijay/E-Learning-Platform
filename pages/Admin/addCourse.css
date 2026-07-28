@@ -113,33 +113,7 @@ form {
     padding: 10px;
 }
 
-/* ========================================================= */
 
-
-
-.container{
-width: 99%;
-/* margin: 20px; */
-border: solid 2px;
-min-height: 300px;
-max-height: auto;
-
-background-color: rgba(153, 116, 73, 0.671);
-overflow:auto;
-
-margin: auto;
-}
-
-
-
-
-
-
-
-
-
-
-/* ============================================================ */
 
 
 @media (min-width:500px){
@@ -153,8 +127,8 @@ margin: auto;
     }
 
     fieldset{
-        height: 90%;
-        width: 60%;
+        height: 100%;
+        width: 70%;
          display: flex;
         justify-content: center;
         align-items: center;
@@ -162,8 +136,8 @@ margin: auto;
     }
 
     form{
-        width: 90%;
-        height: 100%;
+        width: 80%;
+        height: 80%;
          display: flex;
         justify-content: center;
 
@@ -176,10 +150,75 @@ margin: auto;
         height: 20%;
     }
 .inputs{
-        height: 100%;
+        height: 90%;
 }
 
 
 
+
 }
 
+
+
+/* =====================Dynamic==================================== */
+
+
+body{
+   
+    overflow: auto;
+   
+}
+
+.courses-container{
+    width: 100%;
+   
+
+    background-color: rgba(12, 116, 116, 0.677);
+    margin: auto;
+}
+
+.items{
+    
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 10px;
+    margin: auto;
+}
+
+.items{
+
+    
+}
+
+
+.course{
+    width: 100%;
+
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    /* margin: 20px; */
+    padding: 15px;
+}
+
+ 
+.course img{
+    width: 80%;
+}
+
+
+.edit{
+    background-color: rgba(37, 208, 208, 0.678);
+}
+.delete{
+    background-color: rgba(165, 42, 42, 0.569);
+}
+
+
+
+
+/* ============================================================ */
