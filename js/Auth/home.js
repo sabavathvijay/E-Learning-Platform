@@ -82,8 +82,11 @@ async function getCourse() {
                     
 
                             <figcaption>
+                              <b>  Lecture : ${course.lecture} </b>
+                            <br>
                             Description : ${course.description}
                             </figcaption>
+
                         </figure>
                         <button class="Enroll" id= "enroll${course.id}" > Enroll now </button>
         </div>
